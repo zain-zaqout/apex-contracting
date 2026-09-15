@@ -1,18 +1,11 @@
 {
-<<<<<<< HEAD
   "name": "apex-construction",
   "private": true,
   "version": "1.0.0",
-=======
-  "name": "apex",
-  "version": "0.1.0",
-  "private": true,
->>>>>>> 774b91ad77f23b5422d85b8346a9d9137d4c865b
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-<<<<<<< HEAD
     "lint": "eslint ."
   },
   "dependencies": {
@@ -20,34 +13,20 @@
     "lucide-react": "^0.544.0",
     "next": "^16.3.4",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "sonner": "^2.0.8"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@tailwindcss/postcss": "^4.1.13",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.39.1",
+    "eslint-config-next": "^16.3.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^4.1.13"
-=======
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "lucide-react": "^1.31.0",
-    "next": "16.3.0",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "sonner": "^2.0.8"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.0",
-    "tailwindcss": "^4"
->>>>>>> 774b91ad77f23b5422d85b8346a9d9137d4c865b
   }
 }

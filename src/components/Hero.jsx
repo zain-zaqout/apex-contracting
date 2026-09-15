@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { images } from '../data/images';
 import { ArrowRight } from 'lucide-react';
 
@@ -34,14 +33,3 @@ export default function Hero() {
     </section>
   );
 }
-=======
-import React from 'react'
-
-const Hero = () => {
-    return (
-        <div>Hero</div>
-    )
-}
-
-export default Hero
->>>>>>> 774b91ad77f23b5422d85b8346a9d9137d4c865b

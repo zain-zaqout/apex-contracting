@@ -63,7 +63,7 @@ export default function SuccessStories() {
                       ))}
                     </div>
                     <blockquote className="mt-5 text-lg leading-relaxed text-[#1a2c4d]">
-                      "{item.quote}"
+                      &ldquo;{item.quote}&rdquo;
                     </blockquote>
                     <p className="mt-6 text-sm font-semibold text-[#ab7926]">{item.project}</p>
                   </div>

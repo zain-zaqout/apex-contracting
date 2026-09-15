@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 
 import Navbar from "../components/Navbar";
@@ -31,13 +30,6 @@ export default function Page() {
       <Footer />
       <FooterBottom />
       <FloatingWhatsApp />
-=======
-import { Hero } from "@/components/Hero";
-export default function Home() {
-  return (
-    <div>
-      <Hero />
->>>>>>> 774b91ad77f23b5422d85b8346a9d9137d4c865b
     </div>
   );
 }
