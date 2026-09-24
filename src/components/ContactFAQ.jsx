@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useRevealGroup } from '../hooks/useReveal';
-import { supabase } from '../lib/supabase';
 import { Send, CheckCircle2, AlertCircle, Plus, Minus, MessageCircle, HelpCircle } from 'lucide-react';
 
 const content = {
@@ -58,17 +57,10 @@ export default function ContactFAQ() {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    if (!supabase) {
-      setStatus('error');
-      return;
-    }
-
     setStatus('sending');
-    try {
-      const { error } = await supabase.from('contact_submissions').insert({ name: form.name, email: form.email, phone: form.phone, project_type: form.projectType, message: form.message, lang: 'en' });
-      if (error) throw error;
-      setStatus('success'); setForm({ name: '', email: '', phone: '', projectType: '', message: '' });
-    } catch { setStatus('error'); }
+    // Simulated send — no real backend yet. Always succeeds after a short delay.
+    await new Promise((resolve) => setTimeout(resolve, 1200));
+    setStatus('success'); setForm({ name: '', email: '', phone: '', projectType: '', message: '' });
   };
 
   const inputCls = 'w-full rounded-xl border border-[#aebfd6] bg-[#ffffff] px-4 py-3 text-sm text-[#0f1b33] placeholder-[#526d96] transition-all duration-300 ease-smooth focus:border-[#d4a73e] focus:outline-none focus:ring-2 focus:ring-[#d4a73e]/20';
